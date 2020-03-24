@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <label for="inputSearch" >Type to filter options</label>
-    <InputSearch v-bind:list="items" id="autocomplete" name="inputSearch" placeholder="Search Items" checktop="true" />
+    <InputSearch v-bind:list="items" id="autocomplete" name="inputSearch" placeholder="Search Items" v-bind:checktop=true @selected="selected" />
   </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
   return {
     items: mockData
   }
+  }, 
+  methods: {
+    selected: function(item) {
+      console.log("item selected " + item.name);
+    }
   }
 }
 </script>
