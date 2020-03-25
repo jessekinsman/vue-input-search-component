@@ -2,6 +2,7 @@
 Simple view component for displaying a list of results that you want a user to select from. User can click into the input and start typing to see only results tha contain whatever they type. 
 This is a great component if you have a several of items the user needs to select from and they might have an idea of what the item is called.
 
+![input search screenshot](https://dl.dropboxusercontent.com/s/8mh13t3yxl44246/input-search.png)
 
 ## Add input to your project withing a Vue template
 ```
